@@ -2,9 +2,12 @@
   "manifest_version": 2,
   "name": "Tab Sorter",
   "version": "1.0.0",
+  "background": {
+    "service_worker": "background.js"
+  },
   "description": "Classez vos onglets",
   "permissions": [
-    "tabs"
+    "tabs", "storage"
   ],
 
   "browser_action": {
