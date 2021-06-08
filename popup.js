@@ -5,4 +5,5 @@ chrome.tabs.query({windowId: chrome.windows.WINDOW_ID_CURRENT}, (tabs) => {
     document.write(`<li>${tabs[i].url}</li>`);
   }
   document.write('</ul>');
+  document.write(`<button id="reason">Cliquez ici</button>`)
 });

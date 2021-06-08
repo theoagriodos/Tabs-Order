@@ -5,6 +5,9 @@
   "background": {
     "service_worker": "background.js"
   },
+  "chrome_url_overrides" : {
+    "newtab": "popup.html"
+  },
   "description": "Classez vos onglets",
   "permissions": [
     "tabs", "storage"
@@ -12,6 +15,7 @@
 
   "browser_action": {
     "default_popup": "popup.html",
-    "default_icon": "img-tab.png"
+    "default_icon": "img-tab.png",
+    "options_page": "options.html"
   }
 }
